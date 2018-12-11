@@ -1,0 +1,8 @@
+To create a secret, you should execute an imperative command.
+The command is:
+kubectl create secret generic <secret_name> --from-literal key=value
+
+instead of generic (key-value pairs -> good for passwords), you can also use docker-registry or tls (for https)
+
+To shutdown minikube:
+minikube ssh "sudo poweroff"
