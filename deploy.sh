@@ -1,6 +1,6 @@
-docker build -t fracassijohn/multi-client:latest -t fracassijohn/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t fracassijohn/multi-server:latest -t fracassijohn/multi-server:$SHA -f ./client/Dockerfile ./server
-docker build -t fracassijohn/multi-worker:latest -t fracassijohn/multi-worker:$SHA -f ./client/Dockerfile ./worker
+docker build -t fracassijohn/multi-client:latest -t fracassijohn/multi-client:$SHA ./client
+docker build -t fracassijohn/multi-server:latest -t fracassijohn/multi-server:$SHA ./server
+docker build -t fracassijohn/multi-worker:latest -t fracassijohn/multi-worker:$SHA ./worker
 
 docker push fracassijohn/multi-client:latest
 docker push fracassijohn/multi-server:latest
