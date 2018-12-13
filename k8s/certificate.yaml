@@ -14,7 +14,7 @@ spec:
   acme:
     config:
       - http01:
-        ingressClass: nginx
+          ingressClass=nginx-internal
         domains:
           - multik8s.tk
           - www.multik8s.tk
